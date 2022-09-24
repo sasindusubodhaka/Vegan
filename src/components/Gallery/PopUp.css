@@ -1,0 +1,16 @@
+.row-popup{
+    display: flex;
+    
+
+}
+.popup-img{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 400px;
+}
+
+.column-popup{
+    padding-left: 30px;
+    padding-right: 30px;
+}
