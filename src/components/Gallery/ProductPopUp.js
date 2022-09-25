@@ -23,9 +23,9 @@ const ProductPopUp = ({ title, image, keyIngredients, skinType, volume, price, d
                         },
                         content: {
                             color: 'darkBlue',
-                            top: '150px',
-                            right: '400px',
-                            left: '400px',
+                            top: '100px',
+                            right: '300px',
+                            left: '300px',
                             bottom: '100px',
 
 
