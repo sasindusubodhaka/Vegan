@@ -8,7 +8,7 @@ const Header = () => {
             <header>
                 <div className='container flex_space'>
                     <div className='logo'>
-                        <img className="logo-image" src="/images/logo.png" alt='' />
+                        <img className="logo-image" src="/images/La_Ceylon.jpg" alt='' />
                     </div>
                     <div className='contact flex_space'>
                         <div className='box flex_space'>
@@ -26,7 +26,7 @@ const Header = () => {
                             </div>
                             <div className='text'>
                                 <h4>Mail Us</h4>
-                                <Link to="/contact">sunnyhotel@gmail.com</Link>
+                                <Link to="/contact">laceylonvegan@gmail.com</Link>
                             </div>
                         </div>
                     </div>

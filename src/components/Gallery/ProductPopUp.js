@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import Modal from 'react-modal'
 import './PopUp.css'
 Modal.setAppElement('#root')
-const ProductPopUp = ({ title, image }) => {
+const ProductPopUp = ({ title, image, keyIngredients, skinType, volume, price, description }) => {
     console.log("Product Details : ", title)
     const [modalIsopen, setmodalIsopen] = useState(false);
     return (
         <>
-            <button className='primary-btn' onClick={() => setmodalIsopen(true)} style={{ height: '30px', width:'100%'}}>{title}</button>
+            <button className='primary-btn' onClick={() => setmodalIsopen(true)} style={{ height: '30px', width: '100%' }}>{title}</button>
             <Modal isOpen={modalIsopen}
                 onRequestClose={() => setmodalIsopen(false)}
                 style={
@@ -34,7 +34,7 @@ const ProductPopUp = ({ title, image }) => {
                 }
             >
                 <section className='gallery top'>
-                 
+
                     <div className='row-popup'>
                         <div className='column-popup'>
                             <div className='popup-img'>
@@ -45,11 +45,27 @@ const ProductPopUp = ({ title, image }) => {
                         </div>
                         <div className='row-popup'>
                             <div className='column-popup'>
-                                <h2><center>Description</center></h2>
-                                <p>
-                                    dgfgdf dfjdgfjhd dfkdhdjhf hjdjfhgdf djhgdfjhgf jhdgfh 
-                                    dgfgdf dfjdgfjhd dfkdhdjhf hjdjfhgdf djhgdfjhgf jhdgfh 
+                                <h2><center>{title}</center></h2>
+                                <p><div className='keys'>
+                                    Key ingredients : </div>  {keyIngredients}
                                 </p>
+                                <p><div className='keys'>
+                                    Skin Type/Hair Type : </div>{skinType}
+                                </p>
+                                <p><div className='keys'>
+                                    Volume :</div> {volume}
+                                </p>
+                                <p><div className='keys'>
+                                    Price : </div>{price}
+                                </p>
+                                <p><div className='keys'>
+                                    Description : </div>{description}
+                                </p>
+                                <div style={{ paddingTop: '30px' }}>
+
+                                    Get yours by calling +11 123 5679 or sending an email to laceylonvegan@gmail.com
+
+                                </div>
                             </div>
 
                         </div>
