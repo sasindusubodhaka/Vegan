@@ -63,8 +63,9 @@ const ProductPopUp = ({ title, image, keyIngredients, skinType, volume, price, d
                                 </p>
                                 <div style={{ paddingTop: '30px' }}>
 
-                                    Get yours by calling +11 123 5679 or sending an email to laceylonvegan@gmail.com
-
+                                    <p style={{color:'black'}}>
+                                        Get yours by calling <span style={{ color: 'blue' }} > +11 123 5679</span> or sending an email to <span style={{ color: 'blue' }}>laceylonvegan@gmail.com</span>
+                                    </p>
                                 </div>
                             </div>
 
